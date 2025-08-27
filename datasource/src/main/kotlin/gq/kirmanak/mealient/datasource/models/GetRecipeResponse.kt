@@ -10,13 +10,13 @@ data class GetRecipeResponse(
     @SerialName("recipeYield") val recipeYield: String = "",
     @SerialName("recipeIngredient") val ingredients: List<GetRecipeIngredientResponse> = emptyList(),
     @SerialName("recipeInstructions") val instructions: List<GetRecipeInstructionResponse> = emptyList(),
-    @SerialName("settings") val settings: GetRecipeSettingsResponse? = null,
+    //@SerialName("settings") val settings: GetRecipeSettingsResponse? = null,
 )
 
-@Serializable
+/*@Serializable
 data class GetRecipeSettingsResponse(
     @SerialName("disableAmount") val disableAmount: Boolean,
-)
+)*/
 
 @Serializable
 data class GetRecipeIngredientResponse(
@@ -27,8 +27,8 @@ data class GetRecipeIngredientResponse(
     @SerialName("display") val display: String,
     @SerialName("referenceId") val referenceId: String,
     @SerialName("title") val title: String?,
-    @SerialName("isFood") val isFood: Boolean,
-    @SerialName("disableAmount") val disableAmount: Boolean,
+    //@SerialName("isFood") val isFood: Boolean,
+    //@SerialName("disableAmount") val disableAmount: Boolean,
 )
 
 @Serializable
