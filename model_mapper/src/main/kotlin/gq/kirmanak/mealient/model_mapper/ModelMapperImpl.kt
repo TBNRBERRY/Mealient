@@ -27,7 +27,7 @@ class ModelMapperImpl @Inject constructor() : ModelMapper {
     override fun toRecipeEntity(getRecipeResponse: GetRecipeResponse) = RecipeEntity(
         remoteId = getRecipeResponse.remoteId,
         recipeYield = getRecipeResponse.recipeYield,
-        disableAmounts = getRecipeResponse.settings?.disableAmount ?: true,
+        disableAmounts = false // getRecipeResponse.settings?.disableAmount ?: true,
     )
 
     override fun toRecipeIngredientEntity(
@@ -42,8 +42,8 @@ class ModelMapperImpl @Inject constructor() : ModelMapper {
         quantity = ingredientResponse.quantity,
         display = ingredientResponse.display,
         title = ingredientResponse.title,
-        isFood = ingredientResponse.isFood,
-        disableAmount = ingredientResponse.disableAmount,
+        isFood = true, // ingredientResponse.isFood,
+        disableAmount = false, // ingredientResponse.disableAmount,
     )
 
     override fun toRecipeInstructionEntity(

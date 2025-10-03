@@ -12,7 +12,7 @@ import gq.kirmanak.mealient.datasource.models.GetRecipeIngredientResponse
 import gq.kirmanak.mealient.datasource.models.GetRecipeInstructionIngredientReference
 import gq.kirmanak.mealient.datasource.models.GetRecipeInstructionResponse
 import gq.kirmanak.mealient.datasource.models.GetRecipeResponse
-import gq.kirmanak.mealient.datasource.models.GetRecipeSettingsResponse
+//import gq.kirmanak.mealient.datasource.models.GetRecipeSettingsResponse
 import gq.kirmanak.mealient.datasource.models.GetRecipeSummaryResponse
 import gq.kirmanak.mealient.datasource.models.UpdateRecipeRequest
 import kotlinx.datetime.LocalDate
@@ -76,8 +76,8 @@ val MILK_RECIPE_INGREDIENT_RESPONSE = GetRecipeIngredientResponse(
     display = "2 oz of white milk",
     referenceId = "1",
     title = null,
-    isFood = false,
-    disableAmount = true,
+    //isFood = false,
+    //disableAmount = true,
 )
 
 val SUGAR_RECIPE_INGREDIENT_RESPONSE = GetRecipeIngredientResponse(
@@ -88,8 +88,8 @@ val SUGAR_RECIPE_INGREDIENT_RESPONSE = GetRecipeIngredientResponse(
     display = "2 oz of white sugar",
     referenceId = "1",
     title = "Sugar",
-    isFood = false,
-    disableAmount = true,
+    //isFood = false,
+    //disableAmount = true,
 )
 
 val BREAD_RECIPE_INGREDIENT_RESPONSE = GetRecipeIngredientResponse(
@@ -100,8 +100,8 @@ val BREAD_RECIPE_INGREDIENT_RESPONSE = GetRecipeIngredientResponse(
     display = "2 oz of white bread",
     referenceId = "3",
     title = null,
-    isFood = false,
-    disableAmount = true,
+    //isFood = false,
+    //disableAmount = true,
 )
 
 val MIX_RECIPE_INSTRUCTION_RESPONSE = GetRecipeInstructionResponse(
@@ -128,7 +128,7 @@ val BOIL_RECIPE_INSTRUCTION_RESPONSE = GetRecipeInstructionResponse(
     ingredientReferences = emptyList()
 )
 
-val NO_AMOUNT_RECIPE_SETTINGS_RESPONSE = GetRecipeSettingsResponse(disableAmount = true)
+//val NO_AMOUNT_RECIPE_SETTINGS_RESPONSE = GetRecipeSettingsResponse(disableAmount = true)
 
 val CAKE_RECIPE_RESPONSE = GetRecipeResponse(
     remoteId = "1",
@@ -136,7 +136,7 @@ val CAKE_RECIPE_RESPONSE = GetRecipeResponse(
     recipeYield = "4 servings",
     ingredients = listOf(SUGAR_RECIPE_INGREDIENT_RESPONSE, BREAD_RECIPE_INGREDIENT_RESPONSE),
     instructions = listOf(MIX_RECIPE_INSTRUCTION_RESPONSE, BAKE_RECIPE_INSTRUCTION_RESPONSE),
-    settings = NO_AMOUNT_RECIPE_SETTINGS_RESPONSE,
+    //settings = NO_AMOUNT_RECIPE_SETTINGS_RESPONSE,
 )
 
 val PORRIDGE_RECIPE_RESPONSE = GetRecipeResponse(
